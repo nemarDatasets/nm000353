@@ -1,0 +1,30 @@
+Bonn intracranial EEG segments, sets C, D, E (iEEG-BIDS release)
+
+License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+https://creativecommons.org/licenses/by-nc/4.0/legalcode
+PLUS the source's prohibition of military use (see below), which no standard license expresses.
+
+Source and rights statements
+- Source dataset: Andrzejak RG, Lehnertz K, Rieke C, Mormann F, David P, Elger CE. Indications of nonlinear
+  deterministic and finite dimensional structures in time series of brain electrical activity: Dependence on
+  recording region and brain state [dataset]. Repositori Digital de la UPF, 2001. doi:10.34810/data490,
+  http://hdl.handle.net/10230/42894
+- The repository record lists two rights statements (dc.rights), verbatim:
+  1. "Licensed under a Creative Commons License (CC-BY) 4.0" (dc.rights.uri https://creativecommons.org/licenses/by/4.0/)
+  2. "The source codes, data and results on these sites are free of charge for research and education
+     purposes only. Any commercial or military use is prohibited. All resources are provided without any
+     expressed or implied warranty. In no event the authors of the article or any of their host institutions
+     are liable for any damages arising from the use of the software, data or results."
+  The UPF NTSA download page carries the same Legal Agreement (statement 2).
+
+Why CC BY-NC 4.0: it is the closest standard license that honours both statements (attribution, and no
+commercial use). Statement 2 also prohibits MILITARY use. That restriction is not expressible in a standard
+Creative Commons license and applies in addition: use these data for research and education purposes only;
+any commercial or military use is prohibited.
+
+Attribution: cite Andrzejak RG, Lehnertz K, Mormann F, Rieke C, David P, Elger CE (2001) Phys. Rev. E 64,
+061907, doi:10.1103/PhysRevE.64.061907, and doi:10.34810/data490.
+
+Changes made: only the intracranial sets C, D, E are included (sets A and B, scalp EEG from healthy
+volunteers, are omitted); format conversion only (ASCII integers to BrainVision INT_16, values identical);
+BIDS metadata added. Original zip files of sets C, D, E are included unchanged in sourcedata/.

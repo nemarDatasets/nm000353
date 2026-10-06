@@ -1,0 +1,33 @@
+{
+  "source": "Repositori Digital de la UPF, hdl:10230/42894, doi:10.34810/data490",
+  "acquired": "2026-10-06 via the DSpace REST API; every bitstream MD5 equals the repository checkSum in bundles.json",
+  "files": [
+    {
+      "path": "N.zip",
+      "bytes": 574452,
+      "sha256": "46ed8a2ccb089f5c6a58d2fa8976b3407c877bc95241f4a4909067e50d91b08b"
+    },
+    {
+      "path": "F.zip",
+      "bytes": 582967,
+      "sha256": "081b499ffeeefc660443a4615572543f635f7f8e96a6a754e31cc448f3a3a8ed"
+    },
+    {
+      "path": "S.zip",
+      "bytes": 764359,
+      "sha256": "6d3880381b687529e2c0651e07368bb32fc1efc84cf69f52c0d6ffd85f86f92b"
+    },
+    {
+      "path": "_repository_metadata/item.json",
+      "bytes": 9708,
+      "sha256": "392f9968993a38bb2306a1bb42d5acd1e0dccb99868e309e04bcebadc64635fa"
+    },
+    {
+      "path": "_repository_metadata/bundles.json",
+      "bytes": 13155,
+      "sha256": "681f010eab5babd98a8b73233fe1f990596055ff254d6057f3baa98005effcf6"
+    }
+  ],
+  "excluded": "Z.zip (set A) and O.zip (set B) are surface EEG from healthy volunteers, not intracranial; they are intentionally not redistributed in this iEEG dataset. They remain available from the source record.",
+  "web_page_capture": "upf_ntsa_download_page_2026-10-06.txt: text of the UPF NTSA download page captured 2026-10-06"
+}
