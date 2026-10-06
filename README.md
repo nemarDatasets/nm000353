@@ -1,5 +1,7 @@
 # Bonn intracranial EEG segments, sets C, D and E (iEEG-BIDS)
 
+## Overview
+
 Single-channel intracranial EEG segments from five epilepsy patients, from the data set of:
 
 > Andrzejak RG, Lehnertz K, Mormann F, Rieke C, David P, Elger CE (2001). Indications of nonlinear
@@ -29,7 +31,20 @@ The source has five sets (A-E) of 100 segments each:
 This is an intracranial EEG (iEEG) release. Sets A and B are scalp recordings from healthy volunteers, so they
 are not redistributed here. They remain available from the source record.
 
-## Recordings (paper, Sec. II A)
+## Cohort and recording
+
+| | |
+|---|---|
+| Patients | 5 epilepsy patients from the presurgical-diagnosis EEG archive of the Department of Epileptology, University of Bonn; all achieved complete seizure control after resection of one hippocampal formation (paper, Sec. II A) |
+| Implant | depth electrodes implanted symmetrically into both hippocampal formations; strip electrodes on the lateral and basal neocortex (paper, Fig. 2) |
+| Sets C and D | hippocampal depth-electrode contacts (C: opposite hemisphere; D: within the epileptogenic zone), seizure-free interval |
+| Set E | contacts of any depicted electrode (depth or strip) exhibiting ictal activity |
+| Amplifier | "the same 128-channel amplifier system" for all sets; manufacturer and model not reported |
+| Digitization | 12-bit analog-to-digital conversion, 173.61 Hz |
+| Reference | average common reference, omitting electrodes containing pathological activity |
+| Age, sex, per-patient details | not reported by the source; segments cannot be attributed to patients |
+
+### Recordings (paper, Sec. II A)
 
 - "Sets C, D, and E originated from our EEG archive of presurgical diagnosis. For the present study EEGs from
   five patients were selected, all of whom had achieved complete seizure control after resection of one of the
@@ -47,17 +62,17 @@ are not redistributed here. They remain available from the source record.
   sampling rate of 173.61 Hz. Band-pass filter settings were 0.53-40 Hz (12 dB/oct.)."
 - Funding: Deutsche Forschungsgemeinschaft. The paper reports no ethics statement.
 
-## Filtering: the paper and the download page disagree
+## Task / paradigm and timing
 
-- Paper: "Band-pass filter settings were 0.53-40 Hz (12 dB/oct.)."
-- UPF download page (captured 2026-10-06): "The time series you can download here are not filtered. The
-  application of a low-pass filter of 40 Hz, as described in the manuscript, is regarded as the first step of
-  analysis and therefore not carried out for the downloadable time series."
+There was no task. Each run is one 23.6 s segment cut by the authors out of a continuous clinical recording:
+`task-interictal` (sets C and D, seizure-free interval) or `task-ictal` (set E, seizure activity). Segments are
+not time-locked to any stimulus or to seizure onset, and their position in the original recording is not
+provided. Each `..._events.tsv` has one event (onset 0, duration of the run) whose `trial_type` names the set
+(levels described in `task-*_events.json`).
 
-Both statements are reproduced here; the BIDS sidecars therefore record `SoftwareFilters` and
-`HardwareFilters` as `n/a` and quote both in `FilterNotes`. No filtering was done during conversion.
+## Files
 
-## Content and verified properties
+### Content and verified properties
 
 | | |
 |---|---|
@@ -72,15 +87,7 @@ The values are integers in the range of a signed 12-bit converter (-2048 to 2047
 the converter maximum, in 72 samples in total (set D: 1 file; set E: 2 files). These samples are probably
 clipped. Per-file counts are in `sub-pooled_scans.tsv` (`n_samples_at_2047`).
 
-## Units
-
-The source does not state the physical scale of the integer values (for example, microvolts per unit). The
-paper's Fig. 3 caption says intracranial amplitudes are "around some 100 µV" and seizure activity "can exceed
-1000 µV", which is consistent with roughly 1 µV per unit. That is not a documented calibration. Channel `units`
-are therefore `n/a` (in `channels.tsv` and in the BrainVision header), and the values are the source integers
-unchanged.
-
-## BIDS layout and source-to-BIDS mapping
+### BIDS layout and source-to-BIDS mapping
 
 The source states: "the signals included in these sets are randomized with regard to the recording contact and
 the patient or volunteer. Accordingly, the information which signal corresponds to which recording contact or
@@ -111,15 +118,71 @@ inheritance:
 
 Electrode positions are not available, so there is no `electrodes.tsv`.
 
-## Data format and exactness
+### Data format and exactness
 
 The source integers are stored as BrainVision `INT_16` (multiplexed, resolution 1). A separate round-trip check
 re-read all 300 files and compared every sample with the source text (see the campaign ledger).
+
+## Preprocessing already applied by the source
+
+- Segment selection: segments were "selected and cut out of continuous multichannel EEG recordings after visual
+  inspection for artifacts, e.g., due to muscle activity or eye movements" and had to fulfil a weak-stationarity
+  criterion (paper, Sec. II A and II B 2).
+- Segment boundaries (paper, Sec. II B 1, paraphrased): to avoid spurious spectral components from
+  discontinuities, 4396-sample stretches were first cut out of the recordings; within each, the start of the
+  final 4096-sample segment was chosen so that the amplitude difference between the last and first samples was
+  within the range of differences between consecutive samples, and the slopes at the end and start had the
+  same sign.
+- Filtering: see below.
+
+### Filtering: the paper and the download page disagree
+
+- Paper: "Band-pass filter settings were 0.53-40 Hz (12 dB/oct.)."
+- UPF download page (captured 2026-10-06): "The time series you can download here are not filtered. The
+  application of a low-pass filter of 40 Hz, as described in the manuscript, is regarded as the first step of
+  analysis and therefore not carried out for the downloadable time series."
+
+Both statements are reproduced here; the BIDS sidecars therefore record `SoftwareFilters` and
+`HardwareFilters` as `n/a` and quote both in `FilterNotes`. No filtering was done during conversion.
+
+## Known caveats
+
+- `sub-pooled` is a pseudo-subject that pools five patients; see "BIDS layout and source-to-BIDS mapping".
+- Every file has 4097 samples although the paper and the download page say 4096; see "Content and verified properties".
+- Three segments reach the converter maximum (probable clipping); see "Content and verified properties".
+- The physical unit of the integer values is not documented; see "Units".
+- The paper and the download page disagree on filtering; see "Filtering".
+- Set E channels are typed `OTHER` because a segment may come from a depth or a strip contact.
+
+### Units
+
+The source does not state the physical scale of the integer values (for example, microvolts per unit). The
+paper's Fig. 3 caption says intracranial amplitudes are "around some 100 µV" and seizure activity "can exceed
+1000 µV", which is consistent with roughly 1 µV per unit. That is not a documented calibration. Channel `units`
+are therefore `n/a` (in `channels.tsv` and in the BrainVision header), and the values are the source integers
+unchanged.
 
 ## Privacy
 
 The published files contain only integer samples (no headers, names, dates or identifiers). The source
 randomized segments across patients and contacts. Converted headers contain no dates or identifiers.
+
+## How to load
+
+The signal files are stored with git-annex on NEMAR; fetch them first (for example `git annex get sub-pooled`
+or the NEMAR download tools). Then, with MNE-BIDS:
+
+```python
+from mne_bids import BIDSPath, read_raw_bids
+
+bids_path = BIDSPath(root="nm000353", subject="pooled", task="ictal",
+                     acquisition="setE", run="001", datatype="ieeg")
+raw = read_raw_bids(bids_path)
+```
+
+The channel unit is `n/a` (see "Units"), so MNE may warn about it. Compare `raw.get_data()` with the
+`min`/`max` columns of `sub-pooled_scans.tsv` to check whether your reader applied any scaling to the source
+integers.
 
 ## License and terms of use
 
@@ -149,3 +212,7 @@ Converted 2026-10-06 on SDSC Voyager (Kubernetes jobs) by the iEEG-NEMAR campaig
 API, and every bitstream's MD5 matched the repository checksum. See `sourcedata/provenance.json`. Paper
 details were taken from the published version deposited at hdl:10230/43637 (repository full-text extraction)
 and from the UPF NTSA download page.
+
+Additional details in this README (affiliations, acknowledgments, segment-boundary procedure) were read on
+2026-10-06 from the repository text extraction (`Andrzejak_PhysRevE2001.pdf.txt`) of the published article
+deposited at hdl:[10230/43637](http://hdl.handle.net/10230/43637).

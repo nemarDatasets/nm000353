@@ -11,7 +11,7 @@
     "Peter David",
     "Christian E. Elger"
   ],
-  "Acknowledgements": "Data published by the authors at the Repositori Digital de la UPF (doi:10.34810/data490). BIDS conversion of the intracranial sets C, D and E for NEMAR by Bruno Aristimunha's iEEG-NEMAR campaign.",
+  "Acknowledgements": "Data published by the authors at the Repositori Digital de la UPF (doi:10.34810/data490). BIDS conversion of the intracranial sets C, D and E for NEMAR by Bruno Aristimunha's iEEG-NEMAR campaign. Andrzejak et al. (2001), Acknowledgments: \"We are grateful to Wieland Burr, Thomas Kreuz, Thomas Schreiber, and Guido Widman for useful discussions. This work was supported by the Deutsche Forschungsgemeinschaft.\"",
   "HowToAcknowledge": "Cite Andrzejak RG, Lehnertz K, Mormann F, Rieke C, David P, Elger CE (2001) Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state. Phys. Rev. E 64, 061907, doi:10.1103/PhysRevE.64.061907, and the dataset doi:10.34810/data490. The source asks: 'The correct citation is Phys. Rev. E, 64, 061907. No page numbers should be given.'",
   "Funding": [
     "Deutsche Forschungsgemeinschaft (DFG)"
@@ -23,7 +23,8 @@
     "https://doi.org/10.1103/PhysRevE.64.061907",
     "https://doi.org/10.34810/data490",
     "http://hdl.handle.net/10230/42894",
-    "https://www.upf.edu/web/ntsa/downloads"
+    "https://www.upf.edu/web/ntsa/downloads",
+    "http://hdl.handle.net/10230/43637"
   ],
   "SourceDatasets": [
     {
@@ -39,7 +40,11 @@
     "interictal",
     "hippocampus",
     "Bonn EEG",
-    "nonlinear time series analysis"
+    "nonlinear time series analysis",
+    "depth electrodes",
+    "strip electrodes",
+    "presurgical evaluation",
+    "surrogate data"
   ],
   "GeneratedBy": [
     {
