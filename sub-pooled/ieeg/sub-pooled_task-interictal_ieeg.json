@@ -1,0 +1,23 @@
+{
+  "TaskName": "interictal",
+  "TaskDescription": "No task. Segments from the seizure-free interval of presurgical intracranial EEG (sets C and D of Andrzejak et al. 2001).",
+  "iEEGPlacementScheme": "Depth electrodes implanted symmetrically into the hippocampal formations (presurgical evaluation). Set C: hippocampal formation of the opposite hemisphere; set D: within the epileptogenic zone. Segments were taken from all contacts of the respective depth electrode; the contact of each segment is not provided.",
+  "SEEGChannelCount": 1,
+  "ECOGChannelCount": 0,
+  "EEGChannelCount": 0,
+  "OtherChannelCount": 0,
+  "InstitutionName": "Department of Epileptology, University of Bonn",
+  "InstitutionAddress": "Sigmund-Freud-Strasse 25, 53105 Bonn, Germany",
+  "iEEGReference": "Average common reference, omitting electrodes containing pathological activity (Andrzejak et al. 2001).",
+  "iEEGGround": "n/a",
+  "SamplingFrequency": 173.61,
+  "PowerLineFrequency": 50,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": "n/a",
+  "FilterNotes": "Andrzejak et al. (2001): 'Band-pass filter settings were 0.53-40 Hz (12 dB/oct.)'. UPF download page: 'The time series you can download here are not filtered. The application of a low-pass filter of 40 Hz, as described in the manuscript, is regarded as the first step of analysis and therefore not carried out for the downloadable time series.' No filter was applied during this conversion.",
+  "Manufacturer": "n/a",
+  "RecordingDuration": 23.598871,
+  "RecordingType": "continuous",
+  "ElectricalStimulation": false,
+  "SubjectArtefactDescription": "Segments were selected by the source after visual inspection for artifacts (e.g. muscle activity, eye movements) and had to fulfil a weak-stationarity criterion."
+}

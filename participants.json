@@ -1,0 +1,18 @@
+{
+  "participant_id": {
+    "Description": "Pseudo-subject. sub-pooled is NOT one person: it pools anonymous single-channel segments from the intracranial EEG of five epilepsy patients (sets C, D, E). The source randomized the segments with regard to patient and recording contact and does not provide that mapping, so per-patient subjects cannot be formed."
+  },
+  "species": {
+    "Description": "Species of the recorded individuals."
+  },
+  "n_patients_pooled": {
+    "Description": "Number of patients whose recordings contributed segments to sets C, D and E (Andrzejak et al. 2001, Sec. II A)."
+  },
+  "age": {
+    "Description": "Not reported by the source.",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "Not reported by the source."
+  }
+}

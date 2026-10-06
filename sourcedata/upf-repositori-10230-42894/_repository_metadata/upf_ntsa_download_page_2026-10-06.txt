@@ -1,0 +1,34 @@
+Captured 2026-10-06 (innerText of the page body) from
+https://www.upf.edu/web/ntsa/downloads/-/asset_publisher/xvT6E4pczrBw/content/2001-indications-of-nonlinear-deterministic-and-finite-dimensional-structures-in-time-series-of-brain-electrical-activity-dependence-on-recording-regi
+---------------------------------------------------------------------------------------------------
+Reference
+
+The data on this page was first analyzed in:
+
+Andrzejak RG, Lehnertz K, Rieke C, Mormann F, David P, Elger CE (2001) Indications of nonlinear deterministic and finite dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state, Phys. Rev. E, 64, 061907.
+
+Source code
+
+In order to understand the data you should at first read the paper (you can find a link above, which will bring to a PDF of the paper). Some indications are given below, but all the details are in the manuscript. Please make sure that you cite the paper and that you cite it correctly when you publish results on these EEG recordings. A correct citation is essential, as it will allow others to find the data. The correct citation is Phys. Rev. E, 64, 061907. No page numbers should be given.
+
+The data
+
+The sampling rate of the data was 173.61 Hz. The time series you can download here are not filtered. The application of a low-pass filter of 40 Hz, as described in the manuscript, is regarded as the first step of analysis and therefore not carried out for the downloadable time series. 
+
+Files
+
+For each set (A-E) there is a ZIP-file containing 100 TXT-files. Each TXT-file consists of 4096 samples of one EEG time series in ASCII code.
+
+SET A in file  Z.zip  containing Z000.txt - Z100.txt  
+SET B in file  O.zip containing O000.txt - O100.txt 
+SET C in file  N.zip containing N000.txt - N100.txt 
+SET D in file  F.zip containing F000.txt - F100.txt   
+SET E in file  S.zip containing S000.txt - S100.txt  
+
+Please refer to the manuscript to see which set (A-E) refers to which state and/or recording setup. Please note that the signals included in these sets are randomized with regard to the recording contact and the patient or volunteer. Accordingly, the information which signal corresponds to which recording contact or patient or volunteer is not available. 
+ 
+
+Identical material mirrowed at library page: e-Repositori
+Legal Agreement
+
+The source codes, data and results on these sites are free of charge for research and education purposes only. Any commercial or military use is prohibited. All resources are provided without any expressed or implied warranty. In no event the authors of the article or any of their host institutions are liable for any damages arising from the use of the software, data or results.

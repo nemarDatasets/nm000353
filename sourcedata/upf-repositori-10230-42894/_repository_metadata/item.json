@@ -1,0 +1,282 @@
+{
+  "id" : "77d77b11-1254-4fc2-9065-e37e6ff6e217",
+  "uuid" : "77d77b11-1254-4fc2-9065-e37e6ff6e217",
+  "name" : "Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state [dataset]",
+  "handle" : "10230/42894",
+  "metadata" : {
+    "dc.contributor.author" : [ {
+      "value" : "Andrzejak, Ralph Gregor",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Lehnertz, Klaus",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Rieke, Christoph",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 2
+    }, {
+      "value" : "Mormann, Florian",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 3
+    }, {
+      "value" : "David, Peter",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 4
+    }, {
+      "value" : "Elger, Christian E.",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 5
+    } ],
+    "dc.date.accessioned" : [ {
+      "value" : "2019-11-19T12:40:29Z",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.available" : [ {
+      "value" : "2019-11-19T12:40:29Z",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.date.issued" : [ {
+      "value" : "2001",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description" : [ {
+      "value" : "Text files (.txt). Files: For each set (A-E) there is a ZIP-file containing 100 TXT-files. Each TXT-file consists of 4096 samples of one EEG time series in ASCII code. SET A in file Z.zip containing Z000.txt - Z100.txt, SET B in file O.zip containing O000.txt - O100.txt, SET C in file N.zip containing N000.txt - N100.txt, SET D in file F.zip containing F000.txt - F100.txt, SET E in file S.zip containing S000.txt - S100.txt",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.abstract" : [ {
+      "value" : "This page data analyzed in the manuscript: Andrzejak RG, Lehnertz K, Rieke C, Mormann F, David P, Elger CE (2001) Indications of nonlinear deterministic and finite dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state, Phys. Rev. E, 64, 061907. If you use any of these resources, please make sure that you cite this reference. For more detailed information, please refer to https://www.upf.edu/web/ntsa/downloads",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.description.sponsorship" : [ {
+      "value" : "This work was supported by the Deutsche Forschungsgemeinschaf.",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.citation" : [ {
+      "value" : "Andrzejak RG, Lehnertz K, Rieke C, Mormann F, David P, Elger CE. Indications of nonlinear deterministic and finite dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state [dataset]. Repositori Digital de la UPF: Barcelona; 2001. Available from: http://hdl.handle.net/10230/42894",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.doi" : [ {
+      "value" : "https://doi.org/10.34810/data490",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.identifier.uri" : [ {
+      "value" : "http://hdl.handle.net/10230/42894",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.language.iso" : [ {
+      "value" : "eng",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.relation" : [ {
+      "value" : "Publicació relacionada: Andrzejak RG, Lehnertz K, Rieke C, Mormann F, David P, Elger CE. Indications of nonlinear deterministic and finite dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state. Phys. Rev. E. 2012; 64:061907. DOI: 10.1103/PhysRevE.64.061907 http://hdl.handle.net/10230/43637",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.relation.isreferencedby" : [ {
+      "value" : "http://hdl.handle.net/10230/43637",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights" : [ {
+      "value" : "Licensed under a Creative Commons License (CC-BY) 4.0",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "The source codes, data and results on these sites are free of charge for research and education purposes only. Any commercial or military use is prohibited. All resources are provided without any expressed or implied warranty. In no event the authors of the article or any of their host institutions are liable for any damages arising from the use of the software, data or results.",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 1
+    } ],
+    "dc.rights.accessRights" : [ {
+      "value" : "info:eu-repo/semantics/openAccess",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.rights.uri" : [ {
+      "value" : "https://creativecommons.org/licenses/by/4.0/",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.subject.keyword" : [ {
+      "value" : "Nonlinear time series analysis",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Prediction error",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 1
+    }, {
+      "value" : "Correlation dimension",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 2
+    }, {
+      "value" : "Surrogates",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 3
+    }, {
+      "value" : "Electroencephalographic recordings",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 4
+    }, {
+      "value" : "Epilepsy",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 5
+    } ],
+    "dc.title" : [ {
+      "value" : "Indications of nonlinear deterministic and finite-dimensional structures in time series of brain electrical activity: Dependence on recording region and brain state [dataset]",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    } ],
+    "dc.type" : [ {
+      "value" : "info:eu-repo/semantics/other",
+      "language" : "ca",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 0
+    }, {
+      "value" : "Dataset",
+      "language" : "",
+      "authority" : null,
+      "orcid" : null,
+      "confidence" : -1,
+      "place" : 1
+    } ]
+  },
+  "inArchive" : true,
+  "discoverable" : true,
+  "withdrawn" : false,
+  "lastModified" : "2024-05-13T07:58:22.033+00:00",
+  "entityType" : null,
+  "type" : "item",
+  "_links" : {
+    "accessStatus" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/accessStatus"
+    },
+    "bundles" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/bundles"
+    },
+    "identifiers" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/identifiers"
+    },
+    "mappedCollections" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/mappedCollections"
+    },
+    "owningCollection" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/owningCollection"
+    },
+    "relationships" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/relationships"
+    },
+    "version" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/version"
+    },
+    "templateItemOf" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/templateItemOf"
+    },
+    "thumbnail" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217/thumbnail"
+    },
+    "self" : {
+      "href" : "https://repositori.upf.edu/server/api/core/items/77d77b11-1254-4fc2-9065-e37e6ff6e217"
+    }
+  }
+}

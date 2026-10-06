@@ -1,0 +1,10 @@
+{
+  "trial_type": {
+    "Description": "Set/condition of the whole run (one event spanning the run).",
+    "Levels": {
+      "interictal_contralateral_hippocampus": "Set C: seizure-free interval, hippocampal formation of the opposite hemisphere.",
+      "interictal_epileptogenic_zone": "Set D: seizure-free interval, within the epileptogenic zone.",
+      "ictal": "Set E: seizure activity."
+    }
+  }
+}

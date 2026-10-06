@@ -1,0 +1,46 @@
+{
+  "set": {
+    "Description": "Set label used in Andrzejak et al. (2001).",
+    "Levels": {
+      "C": "interictal, hippocampal formation of the opposite hemisphere (source N.zip)",
+      "D": "interictal, within the epileptogenic zone (source F.zip)",
+      "E": "seizure (ictal) activity (source S.zip)"
+    }
+  },
+  "source_label": {
+    "Description": "Letter used in the source file names (N, F, S)."
+  },
+  "segment_index": {
+    "Description": "Number in the source file name (e.g. F037.txt -> 37). Segments are randomized by the source with regard to recording contact and patient; the index carries no patient or contact information."
+  },
+  "brain_state": {
+    "Description": "interictal (seizure-free interval) or ictal (seizure activity)."
+  },
+  "recording_region": {
+    "Description": "Recording region of the set as described in Andrzejak et al. (2001)."
+  },
+  "source_archive": {
+    "Description": "Source zip archive (copied byte-identically to sourcedata/upf-repositori-10230-42894/)."
+  },
+  "source_member": {
+    "Description": "Text file inside the source archive from which this run was converted."
+  },
+  "source_member_sha256": {
+    "Description": "SHA-256 of the uncompressed source text file."
+  },
+  "n_samples": {
+    "Description": "Number of samples in the source file (4097 in every file; the source page and the paper state 4096)."
+  },
+  "min": {
+    "Description": "Minimum sample value (source integer units)."
+  },
+  "max": {
+    "Description": "Maximum sample value (source integer units)."
+  },
+  "n_samples_at_2047": {
+    "Description": "Number of samples equal to 2047, the largest value of a signed 12-bit converter; such samples are likely clipped at the converter limit."
+  },
+  "n_samples_at_minus2048": {
+    "Description": "Number of samples equal to -2048, the smallest value of a signed 12-bit converter."
+  }
+}
