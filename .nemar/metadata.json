@@ -1,0 +1,119 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Ralph G. Andrzejak": {},
+    "Klaus Lehnertz": {
+      "orcid": "0000-0002-5529-8559",
+      "affiliations": [
+        {
+          "name": "Pompeu Fabra University",
+          "identifier": "https://ror.org/04n0g0b29",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Florian Mormann": {
+      "orcid": "0000-0003-1305-8028",
+      "affiliations": [
+        {
+          "name": "Pompeu Fabra University",
+          "identifier": "https://ror.org/04n0g0b29",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Christoph Rieke": {},
+    "Peter David": {},
+    "Christian E. Elger": {
+      "orcid": "0000-0002-2531-6701",
+      "affiliations": [
+        {
+          "name": "Pompeu Fabra University",
+          "identifier": "https://ror.org/04n0g0b29",
+          "scheme": "ROR"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.34810/data490",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1103/PhysRevE.64.061907",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000353",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000353",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Deutsche Forschungsgemeinschaft (DFG)"
+    }
+  ],
+  "title": "Bonn intracranial EEG segments, sets C, D and E (Andrzejak et al. 2001)",
+  "license": "CC-BY-NC-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "4.35 MB (604 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".zip"
+  ],
+  "description": "Intracranial EEG segments from five epilepsy patients, repackaged in BIDS from the Bonn dataset of Andrzejak et al. (2001). The release includes sets C and D (seizure-free interictal recordings from the hippocampal formation and the epileptogenic zone) and set E (ictal activity), with 100 single-channel segments of 23.6 s per set. The data were converted losslessly to BrainVision format, and every sample is identical to the source text files. Scalp EEG sets A and B are excluded.",
+  "methods_description": "Segments were cut from continuous multichannel presurgical depth and strip electrode EEG recordings. Recordings used a 128-channel amplifier with an average common reference, 12-bit analog-to-digital conversion, and a sampling rate of 173.61 Hz. Segments were selected after visual artifact inspection and a weak-stationarity criterion. Each segment is 23.6 s long and contains 4097 samples. Conversion from ASCII to BrainVision INT_16 involved no filtering, resampling, re-referencing or rescaling.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Hippocampus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
+    },
+    {
+      "term": "ictal"
+    },
+    {
+      "term": "interictal"
+    },
+    {
+      "term": "nonlinear time series analysis"
+    }
+  ],
+  "source_hash": "9573a3f2090cf6b77e117bb64815563154adf4852bdc2b4409d17b050730c33d"
+}
