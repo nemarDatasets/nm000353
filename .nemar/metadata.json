@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Bonn intracranial EEG segments, sets C, D and E (Andrzejak et al. 2001)",
-  "description": "This dataset is a lossless BIDS (iEEG-BIDS) repackaging of the intracranial sets C, D and E of the Bonn EEG database (Andrzejak et al., 2001). It contains 300 single-channel segments of 23.6 s each, recorded at 173.61 Hz from five epilepsy patients undergoing presurgical diagnosis. Sets C and D are seizure-free interictal recordings from the hippocampal formation and the epileptogenic zone, and set E contains ictal activity. The data support research on nonlinear time series analysis and seizure detection.",
-  "methods_description": "Segments were cut from continuous multichannel intracranial EEG (depth and strip electrodes) after visual artifact inspection and a weak-stationarity check. Signals were recorded with a 128-channel amplifier using an average common reference, digitized at 12 bit and sampled at 173.61 Hz. The original ASCII integer samples were converted to BrainVision INT_16 without filtering, resampling, re-referencing or rescaling, and every sample was verified against the source text.",
+  "description": "Single-channel intracranial EEG segments (23.6 s each, 173.61 Hz) from five epilepsy patients in the Bonn dataset of Andrzejak et al. (2001). The release repackages sets C, D and E in BIDS: 300 segments covering seizure-free hippocampal recordings (opposite hemisphere and epileptogenic zone) and ictal activity. The samples are identical to the published source text files. The dataset supports nonlinear time-series analysis and seizure detection research.",
+  "methods_description": "Segments were cut from continuous multichannel presurgical EEG recordings from depth and strip electrodes, after visual artifact inspection and a weak-stationarity check. Recordings used a 128-channel amplifier with an average common reference, 12-bit digitization at 173.61 Hz, and band-pass filtering at 0.53-40 Hz. The source text files were converted to BrainVision format without filtering, resampling or rescaling.",
   "license": "CC-BY-NC-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -116,5 +116,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "9573a3f2090cf6b77e117bb64815563154adf4852bdc2b4409d17b050730c33d"
+  "source_hash": "79012d2b42eaa653e003c9f8d98b58af17e03e31a4e0360a6df47566b7cb5b6c"
 }
