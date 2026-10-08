@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Bonn intracranial EEG segments, sets C, D and E (Andrzejak et al. 2001)",
-  "description": "Single-channel intracranial EEG segments (23.6 s each, 173.61 Hz) from five epilepsy patients in the Bonn dataset of Andrzejak et al. (2001). The release repackages sets C, D and E in BIDS: 300 segments covering seizure-free hippocampal recordings (opposite hemisphere and epileptogenic zone) and ictal activity. The samples are identical to the published source text files. The dataset supports nonlinear time-series analysis and seizure detection research.",
-  "methods_description": "Segments were cut from continuous multichannel presurgical EEG recordings from depth and strip electrodes, after visual artifact inspection and a weak-stationarity check. Recordings used a 128-channel amplifier with an average common reference, 12-bit digitization at 173.61 Hz, and band-pass filtering at 0.53-40 Hz. The source text files were converted to BrainVision format without filtering, resampling or rescaling.",
+  "description": "This dataset contains 300 single-channel intracranial EEG segments (23.6 s each, 173.61 Hz) from five epilepsy patients, drawn from the Bonn EEG data of Andrzejak et al. (2001). It covers sets C and D (interictal, hippocampal formation and epileptogenic zone) and set E (ictal activity). Sets A and B (scalp EEG from healthy volunteers) are excluded. The data are a lossless BIDS re-packaging of the published text files, pooled under one pseudo-subject because segment-to-patient mapping is not available.",
+  "methods_description": "Segments were cut from continuous multichannel presurgical EEG recordings after visual artifact inspection and a weak-stationarity criterion. They were recorded with a 128-channel amplifier system and average common reference, digitized at 12 bits and 173.61 Hz, with band-pass filtering at 0.53-40 Hz. Depth electrodes were placed in the hippocampal formations and strip electrodes on the neocortex. The source text files were converted to BrainVision format without filtering, resampling, re-referencing or rescaling.",
   "license": "CC-BY-NC-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -51,9 +51,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "Seizures",
+      "term": "Electroencephalography",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "Hippocampus",
@@ -116,5 +116,5 @@
     ".yml",
     ".zip"
   ],
-  "source_hash": "79012d2b42eaa653e003c9f8d98b58af17e03e31a4e0360a6df47566b7cb5b6c"
+  "source_hash": "207b9152d3c9c8bfc51e631230d2776961c1c9d88a532fe5fda34f7ff283590c"
 }
