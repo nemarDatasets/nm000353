@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Bonn intracranial EEG segments, sets C, D and E (Andrzejak et al. 2001)",
-  "description": "This dataset contains 300 single-channel intracranial EEG segments (23.6 s each, 173.61 Hz) from five epilepsy patients, drawn from the Bonn EEG data of Andrzejak et al. (2001). It covers sets C and D (interictal, hippocampal formation and epileptogenic zone) and set E (ictal activity). Sets A and B (scalp EEG from healthy volunteers) are excluded. The data are a lossless BIDS re-packaging of the published text files, pooled under one pseudo-subject because segment-to-patient mapping is not available.",
-  "methods_description": "Segments were cut from continuous multichannel presurgical EEG recordings after visual artifact inspection and a weak-stationarity criterion. They were recorded with a 128-channel amplifier system and average common reference, digitized at 12 bits and 173.61 Hz, with band-pass filtering at 0.53-40 Hz. Depth electrodes were placed in the hippocampal formations and strip electrodes on the neocortex. The source text files were converted to BrainVision format without filtering, resampling, re-referencing or rescaling.",
+  "description": "This dataset contains 300 single-channel intracranial EEG segments (23.6 s each, 173.61 Hz) from five epilepsy patients, corresponding to sets C, D and E of the Bonn EEG dataset of Andrzejak et al. (2001). Sets C and D are seizure-free interictal recordings from hippocampal formations (opposite hemisphere and epileptogenic zone, respectively), and set E contains ictal activity. The data are a lossless BIDS re-packaging of the published text files, pooled under a single pseudo-subject because segment-to-patient mapping is unavailable.",
+  "methods_description": "Segments were cut from continuous presurgical multichannel EEG recordings from depth and strip electrodes, selected after visual artifact inspection and a weak-stationarity criterion. Signals were recorded with a 128-channel amplifier using an average common reference, 12-bit digitization at 173.61 Hz, and band-pass filtering at 0.53-40 Hz. Source text files were converted to BrainVision format without filtering, resampling, re-referencing or rescaling.",
   "license": "CC-BY-NC-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -51,9 +51,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "Electroencephalography",
+      "term": "Seizures",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
     },
     {
       "term": "Hippocampus",
