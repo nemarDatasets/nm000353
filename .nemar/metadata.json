@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Bonn intracranial EEG segments, sets C, D and E (Andrzejak et al. 2001)",
-  "description": "This dataset repackages the intracranial EEG segments (sets C, D and E) of the Bonn epilepsy dataset into BIDS format. It contains 300 single-channel segments of 23.6 s each, drawn from five epilepsy patients undergoing presurgical evaluation. The segments cover seizure-free intervals recorded in the hippocampal formation and in the epileptogenic zone, as well as ictal activity. The data were originally collected to study nonlinear deterministic and finite-dimensional structure in brain electrical activity. All samples are identical to the published source files.",
-  "methods_description": "Intracranial EEG was recorded with depth electrodes in the hippocampal formations and strip electrodes on the lateral and basal neocortex. All signals were acquired on the same 128-channel amplifier system using an average common reference. Recordings were digitized with 12-bit A/D conversion at 173.61 Hz and band-pass filtered at 0.53-40 Hz. Segments of 23.6 s were selected after visual artifact inspection and a weak-stationarity criterion. The conversion to BrainVision format involved no filtering, resampling, re-referencing or rescaling.",
+  "description": "This dataset contains 300 single-channel intracranial EEG segments (23.6 s each, 173.61 Hz) from five epilepsy patients, drawn from the Bonn EEG data of Andrzejak et al. (2001). It includes sets C and D (seizure-free interictal recordings from the hippocampal formation of the opposite hemisphere and from the epileptogenic zone) and set E (ictal activity). The data are a lossless BIDS re-packaging of the original text files. Scalp EEG sets A and B are excluded, and segments are pooled under one pseudo-subject because the source does not map them to patients.",
+  "methods_description": "Segments were cut from continuous multichannel clinical recordings from the presurgical-diagnosis archive, after visual artifact inspection and a weak-stationarity check. Recordings used depth electrodes in the hippocampal formations and strip electrodes on the neocortex. All signals were acquired with a 128-channel amplifier using an average common reference, 12-bit digitization at 173.61 Hz, and 0.53-40 Hz band-pass filtering. The source text files were converted to BrainVision format without filtering, resampling or rescaling.",
   "license": "CC-BY-NC-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -51,15 +51,15 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "Hippocampus",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
-    },
-    {
       "term": "ictal"
     },
     {
       "term": "interictal"
+    },
+    {
+      "term": "Hippocampus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D006624"
     },
     {
       "term": "nonlinear time series analysis"
