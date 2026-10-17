@@ -218,3 +218,12 @@ and from the UPF NTSA download page.
 Additional details in this README (affiliations, acknowledgments, segment-boundary procedure) were read on
 2026-10-06 from the repository text extraction (`Andrzejak_PhysRevE2001.pdf.txt`) of the published article
 deposited at hdl:[10230/43637](http://hdl.handle.net/10230/43637).
+
+## Units when reading with MNE (added 2026-10-17, version 1.0.3)
+
+The release does not state the physical unit of the signal values, so the BrainVision headers and channels.tsv give
+the unit `n/a` (resolution 1) and the values are the release's numbers, unchanged. MNE and MNE-BIDS read a channel
+with unit `n/a` as volts with scale 1: `raw.get_data()` returns the stored numbers as they are, labelled V. If the
+numbers are microvolt-sized, anything that assumes volts (plot scalings, rejection thresholds, µV conversions) sees
+them 1e6 times too large. In the 2026-10-17 check the channels had a robust SD of about 40-50; the paper describes intracranial amplitudes of "around some 100 µV" (see "Units"), which is consistent with about 1 µV per unit, but that is not a documented calibration. No unit is assigned here because the source does not state one; treat the values as the
+release's numbers in an unknown unit.
